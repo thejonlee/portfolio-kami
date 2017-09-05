@@ -27,7 +27,7 @@ theme_settings:
   github: thejonlee # github profile name, e.g. "madebymunsters"
   google_plus:
   instagram: thejonlee
-  linkedin:  # Full URL
+  linkedin:  https://www.linkedin.com/in/thejonlee/ # Full URL
   pinterest:
   reddit:
   soundcloud:
@@ -39,7 +39,7 @@ theme_settings:
   youtube:
 
   # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: "UA-105885675-1" # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
   katex: true # Enable if using math markup
 
