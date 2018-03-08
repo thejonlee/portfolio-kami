@@ -9,7 +9,7 @@ short-description: An application that allows users to create their own wikis.
 {:.center}
 ![]({{ site.baseurl }}/img/blocipedia/myblocipedia.png)
 
-##Summary
+## Summary
 Blocipedia is a web application built on Ruby on Rails, and structured similarly to Wikipedia. Users can create their own public wikis while premium users can create private ones, and invite collaborators to contribute.
 
 ## Technologies Used
@@ -31,7 +31,7 @@ Blocipedia is a web application built on Ruby on Rails, and structured similarly
 
 [Click here to view the GitHub repo](https://github.com/thejonlee/blocipedia)
 
-##Explanation
+## Explanation
 The end goal for Blocipedia was to create a Wikipedia clone using Ruby on Rails with this set of functionality:
 
 1. Log-in/Sign-up using email and password with email confirmation
@@ -43,12 +43,12 @@ The end goal for Blocipedia was to create a Wikipedia clone using Ruby on Rails 
 7. Premium users are able to add collaborators for wiki topics
 8. All users are able to create and preview wikis using markdown syntax
 
-##Problem
+## Problem
 The initial implementation of user sign-up, and logging users in and out were fairly simple using Devise. User sign up requires an e-mail address and verification, and that was completed utilizing SendGrid. Implementing CRUD operations was also relatively straightforward. Creating three different roles for users, however - standard, admin, and premium - proved to be more of a challenge.
 
 Standard users should be allowed to create public wikis and topics, but premium users should also be allowed to make wikis private while also inviting other collaborators to contribute. Admin users would not be restricted access to any wikis, public or private.
 
-##Solution
+## Solution
 [The Rolify gem](https://github.com/RolifyCommunity/rolify) combined with Devise greatly simplified the process of creating the roles of standard, admin, and premium. I was able to search in order to find a streamlined solution to this problem, and implement it to great effect in Blocipedia. Queries are able to be completed from Rails console.
 
 In the User model, after adding the Rolify gem, I assigned a default role of standard to all users using the after_initialize method.
@@ -61,7 +61,7 @@ In the User model, after adding the Rolify gem, I assigned a default role of sta
   end
 {% endhighlight %}
 
-##Results
+## Results
 After assigning all users the default standard role, all operations work as expected. I established the relationship between users, wikis, and collaborators, and later integrated Stripe to handle payments for upgraded accounts.
 
 Index of Wikis
@@ -81,6 +81,7 @@ Stripe Integration for Payments
 ![]({{ site.baseurl }}/img/blocipedia/stripeintegration.png)
 
 
-##Conclusion
+## Conclusion
 This was my first experience building a fully formed application using Rails, and was surprised at how (relatively) simple it was. The built-in generators along with powerful gems like Devise, Pundit, Stripe, and Rolify can make complicated tasks much simpler and easier to implement.
+
 While building an application like this from the ground up was by no means easy, it did demonstrate the power of the right tools to help create an application with great functionality. It also made me excited to continue learning more about Rails and what other great things it can do.
