@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blocipedia
-thumbnail-path: "img/myblocipedia.png"
+thumbnail-path: "img/blocipedia/myblocipedia.png"
 short-description: An application that allows users to create their own wikis.
 
 ---
