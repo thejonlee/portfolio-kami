@@ -10,11 +10,11 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <h1>Frontend Web Developer</h1>
-     <p>I'm a frontend developer specializing in Rails, AngularJS, and HTML/CSS.</p>
+     <h1>Fullstack Web Developer</h1>
+     <p>I'm a web developer specializing in Rails, Javascript, and HTML/CSS.</p>
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
+   Powered by <a href="http://jekyllrb.com">Jekyll</a>.
 
   # Icons
   rss: false
