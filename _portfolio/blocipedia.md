@@ -7,7 +7,7 @@ short-description: An application that allows users to create their own wikis.
 ---
 
 {:.center}
-![]({{ site.baseurl }}/img/myblocipedia.png)
+![]({{ site.baseurl }}/img/blocipedia/myblocipedia.png)
 
 ##Summary
 Blocipedia is a web application built on Ruby on Rails, and structured similarly to Wikipedia. Users can create their own public wikis while premium users can create private ones, and invite collaborators to contribute.
